@@ -2,9 +2,16 @@
   list-style-type: none;
   margin: 10px;
   overflow: hidden;
-  margin-right: 15px;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   font-size: 13px;
+  padding-left: 0;
+  
+}
+
+.headerli.left a {
+  margin: 8px 7px 0 2px;
+  float: left;
+  opacity: 0.75;
 }
 
 .headerli a {
@@ -15,7 +22,13 @@
   text-decoration: none;
   float: right;
   margin-right: 10px;
+  opacity: 0.87;
 }
+
+.pic.headerli a {
+  margin-right: 0;
+}
+
 .headerli.profile {
   border-radius: 50%;
 }
@@ -47,7 +60,7 @@
 }
 
 .search-area:hover {
-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .search {
@@ -81,6 +94,18 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   flex-wrap: wrap;
 }
 
+.voice-img {
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.voice-img img {
+  margin: auto;
+  width: 60%;
+  display: block;
+}
+
 .input-area {
   color: transparent;
   flex: 100%;
@@ -89,7 +114,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   line-height: 34px;
   height: 34px !important;
   display: block;
- 
+
 }
 
 .input {
@@ -113,7 +138,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
-  width: 480px;
+  width: 487px;
   border: none;
 }
 
@@ -136,6 +161,33 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   user-select: none;
 }
 
+.buttons {
+  width: 571px;
+  height: 70px;
+  padding-top: 18px;
+  top: 53px;
+  margin: auto;
+  text-align: center;
+  flex: 5;
+}
+
+.googlesearch,
+.feelinglucky {
+  color: #5F6368;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  height: 36px;
+  border: solid #f2f2f2 1px;
+  border-radius: 4px;
+  padding-left: 0 16px;
+  margin: 11px 4px;
+}
+
+.googlesearch:hover,
+.feelinglucky:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
 .footer {
   margin: 0;
   padding: 0;
@@ -151,6 +203,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 
 .footerli {
   float: left;
+  list-style-type: none;
 }
 
 .footerli a {
